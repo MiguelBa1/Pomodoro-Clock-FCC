@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#root {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  background: darkcyan;
+  display: flex;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#break-decrement,
+#break-increment,
+#session-increment,
+#session-decrement,
+#start_stop,
+#reset {
+  cursor: pointer;
 }
+
+#main-title {
+  font-weight: bolder;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.length-container {
+  font-size: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.ctl {
+  display: flex;
+  justify-content: space-around;
+}
+
+.timer {
+  display: block;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  text-align: center;
+  border: 8px solid black;
+  border-radius: 20px;
+  padding: 1rem;
+  min-width: 8.438em;
+}
+
+.control {
+  margin-top: 2rem;
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+
+#time-label {
+  font-size: 1.5rem;
+}
+
+#time-left {
+  font-size: 3rem;
+}
+
+#start_stop{
+  background: none;
+  border: none;
+}
+/*# sourceMappingURL=App.css.map */
